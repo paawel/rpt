@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskOneComponent } from './task-one/task-one.component';
+import { TaskTwoComponent } from './task-two/task-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskOneComponent
+    TaskOneComponent,
+    TaskTwoComponent
   ],
   imports: [
     BrowserModule,
