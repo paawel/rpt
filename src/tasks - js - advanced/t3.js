@@ -1,37 +1,11 @@
-let obj0 = {
-  name: 'Ivan',
-  position: 'Developer',
-  skills: {
-    soft: ['english', 'german'],
-    hard: ['js', 'ts', 'angular']
-  }
-};
-let obj1 = {
-  name: 'Ivan',
-  position: 'Developer',
-  skills: {
-    soft: ['english', 'german'],
-    hard: ['js', 'ts', 'angular']
-  }
-};
+let ex1 = '()[]{}';     // true
+let ex2 = '{[]}';       // true
+let ex3 = '((()(())))'; // true
+let ex4 = '(]';         // false
+let ex5 = '([)]';       // false
 
-// TODO: obj0 === obj1 => true
+function brackets(val) {
 
-let obj2 = {
-  name: 'Ivan',
-  position: 'Developer',
-  skills: {
-    hard: ['js', 'ts', 'angular'],
-    soft: ['english', 'german']
-  }
-};
-let obj3 = {
-  position: 'Developer',
-  skills: {
-    soft: ['english', 'german'],
-    hard: ['js', 'ts', 'angular']
-  },
-  name: 'Ivan'
-};
+}
 
-// TODO: obj2 === obj3 => true
+console.log(brackets());

@@ -1,15 +1,37 @@
-var ivan = {fio: 'Ivan Ivanov'};
-var petr = {fio: 'Petr Petrov'};
-var vasily = {fio: 'Vasily Vasiliev'};
+let obj0 = {
+  name: 'Ivan',
+  position: 'Developer',
+  skills: {
+    soft: ['english', 'german'],
+    hard: ['js', 'ts', 'angular']
+  }
+};
+let obj1 = {
+  name: 'Ivan',
+  position: 'Developer',
+  skills: {
+    soft: ['english', 'german'],
+    hard: ['js', 'ts', 'angular']
+  }
+};
 
-function sayMyName() {
-  console.log('My name is:' + this.fio);
-}
+// TODO: obj0 === obj1 => true
 
-// var test = sayMyName.bind(ivan);
-// test();
+let obj2 = {
+  name: 'Ivan',
+  position: 'Developer',
+  skills: {
+    hard: ['js', 'ts', 'angular'],
+    soft: ['english', 'german']
+  }
+};
+let obj3 = {
+  position: 'Developer',
+  skills: {
+    soft: ['english', 'german'],
+    hard: ['js', 'ts', 'angular']
+  },
+  name: 'Ivan'
+};
 
-// TODO:
-// myBind(func, context);
-
-// TODO: как с аргументами ?
+// TODO: obj2 === obj3 => true

@@ -1,13 +1,15 @@
-let developer = {
-  username: "Ivan",
-  skills: ['js', 'css', 'angular'],
-  showSkills: function() {
-    this.skills.forEach(function(skill) {
-      console.log(this.username + " can do " + skill);
-    })
-  }
-};
+var ivan = {fio: 'Ivan Ivanov'};
+var petr = {fio: 'Petr Petrov'};
+var vasily = {fio: 'Vasily Vasiliev'};
 
-developer.showSkills();
+function sayMyName() {
+  console.log('My name is:' + this.fio);
+}
 
-// пофиксить более чем 1-м способом
+// var test = sayMyName.bind(ivan);
+// test();
+
+// TODO:
+// myBind(func, context);
+
+// TODO: как с аргументами ?
