@@ -11,9 +11,8 @@
       drop: function (event) {
         event.preventDefault();
 
-        // NOTE: Do not remove the timeout
+        // таймаут НЕ убирать
         window.setTimeout(function () {
-          // NOTE: Do not modify the lines below.
           this.dropAreaElement.innerHTML = '';
           this.dropAreaElement.appendChild(this.dragItemElement);
         });
@@ -34,16 +33,8 @@
       }, 10);
     }
 
-    function startTracking() {
-      var circle = document.getElementById('circle');
-      var startTrackingButton = document.getElementById('start-tracking-button');
-
-      // TODO: Add tracking logic
-    }
-
     return {
       init: init,
-      startTracking: startTracking,
       startCounting: startCounting,
       dragAPI: dragAPI,
     }

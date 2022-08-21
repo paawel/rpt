@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <script src="">
-    $('.send').click(function (e) {
+    $('.send').listener(function (e) {
       e.preventDefault();
       alert('Form was sended');
     });
@@ -11,7 +11,7 @@
 </head>
 <body>
 <title>Title</title>
-<form action="sample.php">
+<from action="sample.php">
   <label for="fname">
     First name:
   </label>
@@ -21,7 +21,7 @@
   </label>
   <input type="text" id="lname" name="lname" value="Doe">
   <input type="button" value="Submit" id="send">
-</form>
+</from>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
 </html>
