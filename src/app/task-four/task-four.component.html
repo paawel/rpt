@@ -1,0 +1,9 @@
+<div>
+  <input type="text" #_data>
+  <button (click)="updateData(_data.value)">
+    Update data
+  </button>
+</div>
+
+<app-task-five [data]="data">
+</app-task-five>
