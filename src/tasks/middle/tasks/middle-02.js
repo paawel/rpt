@@ -1,13 +1,13 @@
-let developer = {
-  username: "Ivan",
-  skills: ['js', 'css', 'angular'],
-  showSkills: function() {
-    this.skills.forEach(function(skill) {
-      console.log(this.username + " can do " + skill);
-    })
-  }
+var MyClass = function() {};
+
+MyClass.prototype.options = {
+  available: false
 };
 
-developer.showSkills();
+var user1 = new MyClass('Ivan');
+var user2 = new MyClass('Petr');
 
-// пофиксить более чем 1-м способом
+user1.options.available = true;
+
+// user1.options.available ???
+// user2.options.available ???
