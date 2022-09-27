@@ -9,6 +9,7 @@ import { TaskThreeComponent } from './task-three/task-three.component';
 import { ExampleDirective } from './directive/example.directive';
 import { TaskFourComponent } from './task-four/task-four.component';
 import { TaskFiveComponent } from './task-five/task-five.component';
+import { TaskSixComponent } from './task-six/task-six.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TaskFiveComponent } from './task-five/task-five.component';
     TaskThreeComponent,
     ExampleDirective,
     TaskFourComponent,
-    TaskFiveComponent
+    TaskFiveComponent,
+    TaskSixComponent
   ],
   imports: [
     BrowserModule,
