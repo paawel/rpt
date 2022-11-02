@@ -1,9 +1,8 @@
-// вернуть только уникальные значения, не обязательно в массиве
+// напишите код который успешно выполнит тест ниже
 
-var test = [2,3,4,5,6,6,6,2,2,3,44,5,1,1,11,4];
-
-function uniqArray(val) {
-
-}
-
-console.log(uniqArray(test));
+describe('Step 5', function() {
+  it('add(2,8)(5).value() => 15', function() {
+    add(2,8)(5).value()
+      .should.be.exactly(15).and.be.a.Number;
+  });
+});
