@@ -5,10 +5,11 @@ import { TaskTwoComponent } from "./task-two/task-two.component";
 import { TaskThreeComponent } from "./task-three/task-three.component";
 import { TaskFourComponent } from "./task-four/task-four.component";
 import { TaskSixComponent } from "./task-six/task-six.component";
+import { TaskSevenComponent } from "./task-seven/task-seven.component";
 
 const routes: Routes = [
   {
-    path:'/application',
+    path:'application',
     component: TaskOneComponent
   },
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:'five',
     component: TaskSixComponent
+  },
+  {
+    path:'seven',
+    component: TaskSevenComponent
   }
 ];
 

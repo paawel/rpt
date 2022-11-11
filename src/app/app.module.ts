@@ -10,6 +10,8 @@ import { ExampleDirective } from './directive/example.directive';
 import { TaskFourComponent } from './task-four/task-four.component';
 import { TaskFiveComponent } from './task-five/task-five.component';
 import { TaskSixComponent } from './task-six/task-six.component';
+import { TaskSevenComponent } from './task-seven/task-seven.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,20 @@ import { TaskSixComponent } from './task-six/task-six.component';
     ExampleDirective,
     TaskFourComponent,
     TaskFiveComponent,
-    TaskSixComponent
+    TaskSixComponent,
+    TaskSevenComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'api',
+      useValue: 'https://restcountries.com/v2'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
